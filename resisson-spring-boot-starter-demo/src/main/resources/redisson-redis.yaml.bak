@@ -1,0 +1,27 @@
+masterSlaveServersConfig:
+  slaveAddresses:
+    - "redis://10.0.10.23:15489"
+  masterAddress: "redis://10.0.10.23:15389"
+  password: codis*23
+  idleConnectionTimeout: 10000
+  pingTimeout: 1000
+  connectTimeout: 10000
+  timeout: 3000
+  retryAttempts: 3
+  retryInterval: 1500
+  reconnectionTimeout: 3000
+  failedAttempts: 3
+  subscriptionsPerConnection: 5
+  clientName: null
+  loadBalancer: !<org.redisson.connection.balancer.RoundRobinLoadBalancer> {}
+  slaveSubscriptionConnectionMinimumIdleSize: 1
+  slaveSubscriptionConnectionPoolSize: 50
+  slaveConnectionMinimumIdleSize: 10
+  slaveConnectionPoolSize: 64
+  masterConnectionMinimumIdleSize: 10
+  masterConnectionPoolSize: 64
+  readMode: "SLAVE"
+threads: 0
+nettyThreads: 0
+codec: !<org.redisson.codec.JsonJacksonCodec> {}
+useLinuxNativeEpoll: false

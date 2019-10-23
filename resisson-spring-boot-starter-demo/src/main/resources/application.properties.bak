@@ -1,0 +1,2 @@
+# Redisson ≈‰÷√
+redisson.config-location=classpath:redisson-redis.yaml

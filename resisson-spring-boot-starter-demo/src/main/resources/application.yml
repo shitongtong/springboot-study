@@ -1,0 +1,7 @@
+redisson:
+  config-location:  classpath:redisson-redis.yaml
+
+person:
+  name: "hello world"
+  sex:  "ddd"
+  age:  22

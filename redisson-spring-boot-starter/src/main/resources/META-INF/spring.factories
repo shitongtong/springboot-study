@@ -1,0 +1,4 @@
+# Auto Configure
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+cn.stt.config.RedissonAutoConfiguration,\
+cn.stt.config.PersonAutoConfiguration
